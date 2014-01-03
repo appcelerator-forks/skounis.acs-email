@@ -3,13 +3,16 @@ var Cloud = require('ti.cloud');
 //FirstView Component Constructor
 function FirstView() {
 	//create object instance, a parasitic subclass of Observable
-	var self = Ti.UI.createView();
+	var self = Ti.UI.createView({
+        backgroundColor: '#232323'
+    });
 	
 	// Create a Button.
 	var aButton = Ti.UI.createButton({
 		title : 'Send Email',
 		height : 'auto',
-		width : 'auto',
+		width : '200',
+		backgroundColor: '#ffffff',
 	});
 	
 	// Listen for click events.
